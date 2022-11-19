@@ -7,6 +7,11 @@
     "name": "Ermakov Sergey",
     "email": "oino-dev@ya.ru"
   },
+  "scripts": {
+    "dev": "concurrently \"yarn dev:backend:start\" \"yarn dev:frontend:start\"",
+    "dev:frontend:start": "cd apps/frontend && yarn serve",
+    "dev:backend:start": "cd apps/backend && yarn start"
+  },
   "license": "MIT",
   "workspaces": {
     "packages": [
